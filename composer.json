@@ -1,0 +1,21 @@
+{
+  "name": "macc/swif",
+  "description": "A simple illegal words filter",
+  "authors": [
+    {
+      "name": "Macc",
+      "email": "415401620@q.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+     "SIWF\\":"src"
+    },
+    "files":[
+      "src/Helper/Helpers.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  }
+}

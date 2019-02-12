@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Machenchi
- * Date: 2017/5/8
- * Time: 15:55
- * Copyright:EastSea
- */
+
 
 namespace SIWF\Filter\Result;
 
@@ -20,7 +14,7 @@ class RedisAdapter implements StorageAdapter
 
     private $prefix='siwf_result_';
 
-    public function __construct(\Redis $cache)
+    public function __construct( $cache)
     {
         $this->cache = $cache;
         $this->init();

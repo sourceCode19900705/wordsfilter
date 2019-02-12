@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Machenchi
- * Date: 2017/6/27
- * Time: 13:08
- * Copyright:EastSea
- */
+
 
 namespace SIWF\Storage;
 
@@ -36,7 +30,7 @@ class RedisStorageAdapter extends StorageAdapter
      * @param Builder   $builder
      * @param \Memcached $cache
      */
-    public function __construct(Builder $builder,\Redis $cache)
+    public function __construct(Builder $builder, $cache)
     {
         parent::__construct($builder);
         $this->cache = $cache;

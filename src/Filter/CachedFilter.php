@@ -28,9 +28,9 @@ class CachedFilter extends Filter
         if(is_null($res))
         {
             $res =  parent::hint($txt);
-            $this->resStroage->add($txt,$res ? 1 : 0);
+            $this->resStroage->add($res,$res ? 1 : 0);
             return $res;
         }
-        return $res === 0 ? false : $txt;
+        return $res === 0 ? false : $res;
     }
 }

@@ -31,7 +31,7 @@ class RedisAdapter implements StorageAdapter
     public function add($text, $isHint)
     {
         $key = $this->prefix.$this->namespaceKey.$this->namespace.md5($text);
-        $this->cache->set($key,$isHint);
+        $this->cache->set($key,$text);
     }
 
     public function clear()

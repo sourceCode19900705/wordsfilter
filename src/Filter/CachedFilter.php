@@ -24,6 +24,7 @@ class CachedFilter extends Filter
 
     public function hint($txt)
     {
+        //TODO 
         $res = $this->resStroage->get($txt);
         if(is_null($res))
         {
